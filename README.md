@@ -75,6 +75,12 @@ Mixin
 **For a full list of available icons please check the Demo**.
 
 
+Changelog
+=========
+12/01/2011 - First release
+12/01/2011 - Include the SASS files 
+
+
 Todo
 ====
 
