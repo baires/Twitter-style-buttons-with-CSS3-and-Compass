@@ -78,8 +78,10 @@ Mixin
 Todo
 ====
 
-* Make a better :hover state
+* Make a better :hover :visited state
 * Find a solution  for IE9 Border-radius and Background Gradient Bleeding
+* Fix the line height in the :before state (Safari)
+* Improve the typo for Safari
 
 Licence
 =======
