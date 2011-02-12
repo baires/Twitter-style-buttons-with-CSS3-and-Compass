@@ -1,0 +1,18 @@
+$blueprint-grid-columns : 24;
+$blueprint-grid-width   : 30px;
+$blueprint-grid-margin  : 12px;
+
+$font-color             : #777;
+$bg_color               : #ccc;
+
+
+$f_size                 : 14;
+$l_base                 : 20em; 
+$l_master               : $l_base/$f_size;
+$l_simple               : 1em;
+
+@import "compass";
+@import "blueprint";
+@import "compass/utilities/lists/bullets";
+@import "compass/utilities/lists/horizontal-list";
+

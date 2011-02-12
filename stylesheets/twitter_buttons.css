@@ -1,0 +1,24 @@
+.twitter_buttons_reset {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: 700;
+}
+.twitter_buttons_reset::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+.twitter_buttons_reset:focus {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'IconicStroke';
+  src: url("../fonts/iconic_stroke.eot?"), url("../fonts/iconic_stroke.woff") format("woff"), url("../fonts/iconic_stroke.ttf") format("truetype"), url("../fonts/iconic_stroke.svg#svgIconicStroke") format("svg");
+}
