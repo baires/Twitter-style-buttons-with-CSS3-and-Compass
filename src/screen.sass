@@ -1,0 +1,539 @@
+@import compass/reset
+@import base
+@import twitter_buttons
+
+body
+  background-color: $bg_color
+  font-size: 0.857143em
+  /* set default font size to 14px
+  line-height: 1.5em
+  /* set global line height to 18px
+  font:
+    family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif
+    size: 14px
+  color: $font-color
+
+p
+  font-size: 1em
+  line-height: 1.285714em
+  margin-top: 0.642857em
+  margin-bottom: 0.642857em
+  +text-shadow(white, 0, 1px, 1px)
+
+a
+  color: darken($font-color, 20%)
+  text-decoration: none
+  &:hover
+    color: #2A5377
+    +text-shadow(white, 0, 1px, 1px)
+
+sup
+  color: #000
+
+strong
+  font-weight: 700
+
+h1
+  color: darken($bg_color, 35%)
+  font-size: 2.142857em
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
+  line-height: 0.6em
+  margin-top: 0.6em
+  margin-bottom: 0.3em
+  +text-shadow(lighten($bg_color, 25%), 0, 1px, 0)
+  text-align: center
+
+h2
+  color: darken($bg_color, 10%)
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
+  font-size: 1.428571em
+  line-height: 0.9em
+  margin-top: 0em
+  margin-bottom: 0.45em
+  +text-shadow(lighten($bg_color, 15%), 0, 1px, 0)
+  text-align: center
+
+#container
+  +container
+  background-color: #DDD
+  +prepend-top
+  +append-bottom
+  +border-radius(5px)
+
+header
+  +column(24)
+  +prepend-top
+
+section
+  +column(20)
+  +append(2)
+  +prepend(2)
+
+#buttons_container
+  +prepend-top
+  +column(20)
+  +prepend(2)
+  li
+    +column(4)
+    height: 100px
+    +border-radius(5px)
+    background-color: #f0f0f0
+    +append-bottom
+    p
+      text-align: center
+      text-transform: capitalize
+      font-size: 0.857143em
+      line-height: 1.5em
+      margin-top: 0.75em
+      margin-bottom: 0.75em
+      font-weight: 700
+  a
+    text-transform: capitalize
+
+//  ========== 
+//  = Default buttons = 
+//  ==========
+
+/*/////////////// Deafault ////////////////
+a.default
+  +twitter_button
+
+/*/////////////// Green ////////////////
+a.green
+  +twitter_button(#00ae3e, white, 5px, 12px)
+
+/*/////////////// Red ////////////////
+a.red
+  +twitter_button(#c63738, white, 0, 0)
+
+/*/////////////// Violet ////////////////
+a.violet
+  +twitter_button(#cc0099, white)
+
+/*/////////////// Dark Grey ////////////////
+a.darkgrey
+  +twitter_button(#333333, white)
+
+/*/////////////// Yellow ////////////////
+a.yellow
+  +twitter_button(#ffcc00, white)
+
+/*/////////////// Olive ////////////////
+a.olive
+  +twitter_button(#99cc00, white)
+
+/*/////////////// Brown ////////////////
+a.brown
+  +twitter_button(#993300, white)
+
+//  ========== 
+//  = Buttons + Icons = 
+//  ==========
+
+/*/////////////// Home ////////////////
+a.icon_home
+  +twitter_button(#00a0b0, white, 5px, 12px, "!")
+
+/*/////////////// At ////////////////
+a.icon_at
+  +twitter_button(#6a4a3c, white, 5px, 12px, "@")
+
+/*/////////////// Quote ////////////////
+a.icon_quote
+  +twitter_button(#cc333f, white, 5px, 12px, '"')
+
+/*/////////////// Quote Alt ////////////////
+a.icon_quote_alt
+  +twitter_button(#eb6841, white, 5px, 12px, "'")
+
+/*/////////////// Arrow Up ////////////////
+
+a.icon_arrow-up
+  +twitter_button(0, 0, 5px, 12px, "3")
+
+/*/////////////// Arrow Right ////////////////
+
+a.icon_arrow-right
+  +twitter_button(0, 0, 5px, 12px, "4")
+
+/*/////////////// Arrow Bottom ////////////////
+
+a.icon_arrow-bottom
+  +twitter_button(0, 0, 5px, 12px, "5")
+
+/*/////////////// Arrow Left ////////////////
+
+a.icon_arrow-left
+  +twitter_button(0, 0, 5px, 12px, "6")
+
+/*/////////////// Arrow Up Alt ////////////////
+
+a.icon_arrow-up-alt
+  +twitter_button(0, 0, 5px, 12px, "#")
+
+/*/////////////// Arrow Right Alt ////////////////
+
+a.icon_arrow-right-alt
+  +twitter_button(0, 0, 5px, 12px, "$")
+
+/*/////////////// Arrow Bottom Alt ////////////////
+
+a.icon_arrow-bottom-alt
+  +twitter_button(0, 0, 5px, 12px, "%")
+
+/*/////////////// Arrow Left Alt ////////////////
+
+a.icon_arrow-left-alt
+  +twitter_button(0, 0, 5px, 12px, "^")
+
+/*/////////////// Move ////////////////
+
+a.icon_move
+  +twitter_button(0, 0, 5px, 12px, "9")
+
+/*/////////////// Move Vertical ////////////////
+
+a.icon_move-vertical
+  +twitter_button(0, 0, 5px, 12px, "8")
+
+/*/////////////// Move Horizontal ////////////////
+
+a.icon_move-horizontal
+  +twitter_button(0, 0, 5px, 12px, "7")
+
+/*/////////////// Move Alt ////////////////
+
+a.icon_move-alt
+  +twitter_button(0, 0, 5px, 12px, "(")
+
+/*/////////////// Move vertical Alt ////////////////
+
+a.icon_move-vertical-alt
+  +twitter_button(0, 0, 5px, 12px, "*")
+
+/*/////////////// Move Horizontal Alt////////////////
+
+a.icon_move-horizontal-alt
+  +twitter_button(0, 0, 5px, 12px, "&")
+
+/*/////////////// Cursor ////////////////
+
+a.icon_cursor
+  +twitter_button(0, 0, 5px, 12px, ")")
+
+/*/////////////// Plus ////////////////
+
+a.icon_plus
+  +twitter_button(0, 0, 5px, 12px, "+")
+
+/*/////////////// Plus Alt ////////////////
+
+a.icon_plus-alt
+  +twitter_button(0, 0, 5px, 12px, "=")
+
+/*/////////////// Minus ////////////////
+
+a.icon_minus
+  +twitter_button(0, 0, 5px, 12px, "-")
+
+/*/////////////// Minus Alt ////////////////
+
+a.icon_minus-alt
+  +twitter_button(0, 0, 5px, 12px, "_")
+
+/*/////////////// New Window ////////////////
+
+a.icon_new-window
+  +twitter_button(0, 0, 5px, 12px, "1")
+
+/*/////////////// Dial ////////////////
+
+a.icon_dial
+  +twitter_button(0, 0, 5px, 12px, "2")
+
+/*/////////////// Lightbulb ////////////////
+
+a.icon_lightbulb
+  +twitter_button(0, 0, 5px, 12px, "0")
+
+/*/////////////// Link ////////////////
+
+a.icon_link
+  +twitter_button(0, 0, 5px, 12px, "/")
+
+/*/////////////// Image ////////////////
+
+a.icon_image
+  +twitter_button(0, 0, 5px, 12px, "?")
+
+/*/////////////// Article ////////////////
+
+a.icon_article
+  +twitter_button(0, 0, 5px, 12px, ">")
+
+/*/////////////// Read More ////////////////
+
+a.icon_read-more
+  +twitter_button(0, 0, 5px, 12px, ".")
+
+/*/////////////// Headphones ////////////////
+
+a.icon_headphones
+  +twitter_button(0, 0, 5px, 12px, ",")
+
+/*/////////////// Equaliazer ////////////////
+
+a.icon_equalizer
+  +twitter_button(0, 0, 5px, 12px, "<")
+
+/*/////////////// Fullscreen ////////////////
+
+a.icon_fullscreen
+  +twitter_button(0, 0, 5px, 12px, ":")
+
+/*/////////////// Exit Fullscreen ////////////////
+
+a.icon_exit-fullscreen
+  +twitter_button(0, 0, 5px, 12px, ";")
+
+/*/////////////// Spin ////////////////
+
+a.icon_spin
+  +twitter_button(0, 0, 5px, 12px, "[")
+
+/*/////////////// Spin Alt ////////////////
+
+a.icon_spin-alt
+  +twitter_button(0, 0, 5px, 12px, "{")
+
+/*/////////////// Moon ////////////////
+
+a.icon_moon
+  +twitter_button(0, 0, 5px, 12px, "]")
+
+/*/////////////// Sun ////////////////
+
+a.icon_sun
+  +twitter_button(0, 0, 5px, 12px, "}")
+
+/*/////////////// Map Pin ////////////////
+
+a.icon_map-pin
+  +twitter_button(0, 0, 5px, 12px, "\\")
+
+/*/////////////// Pin ////////////////
+
+a.icon_pin
+  +twitter_button(0, 0, 5px, 12px, "|")
+
+/*/////////////// Eyedropper ////////////////
+
+a.icon_eyedropper
+  +twitter_button(0, 0, 5px, 12px, "~")
+
+/*/////////////// Denied ////////////////
+
+a.icon_denied
+  +twitter_button(0, 0, 5px, 12px, "`")
+
+/*/////////////// Calendar ////////////////
+
+a.icon_calendar
+  +twitter_button(0, 0, 5px, 12px, "a")
+
+/*/////////////// Calendar Alt ////////////////
+
+a.icon_calendar-alt
+  +twitter_button(0, 0, 5px, 12px, "A")
+
+/*/////////////// Bolt ////////////////
+
+a.icon_bolt
+  +twitter_button(0, 0, 5px, 12px, "b")
+
+/*/////////////// Clock ////////////////
+
+a.icon_clock
+  +twitter_button(0, 0, 5px, 12px, "c")
+
+/*/////////////// Document ////////////////
+
+a.icon_document
+  +twitter_button(0, 0, 5px, 12px, "d")
+
+/*/////////////// Book ////////////////
+
+a.icon_book
+  +twitter_button(0, 0, 5px, 12px, "e")
+
+/*/////////////// Book Alt ////////////////
+
+a.icon_book-alt
+  +twitter_button(0, 0, 5px, 12px, "E")
+
+/*/////////////// Magnifying Glass ////////////////
+
+a.icon_magnifying-glass
+  +twitter_button(0, 0, 5px, 12px, "f")
+
+/*/////////////// Tag ////////////////
+
+a.icon_tag
+  +twitter_button(0, 0, 5px, 12px, "g")
+
+/*/////////////// Heart ////////////////
+
+a.icon_heart
+  +twitter_button(0, 0, 5px, 12px, "h")
+
+/*/////////////// Info ////////////////
+
+a.icon_info
+  +twitter_button(0, 0, 5px, 12px, "i")
+
+/*/////////////// Chat ////////////////
+
+a.icon_chat
+  +twitter_button(0, 0, 5px, 12px, "j")
+
+/*/////////////// Chat Alt ////////////////
+
+a.icon_chat-alt
+  +twitter_button(0, 0, 5px, 12px, "J")
+
+/*/////////////// Key ////////////////
+
+a.icon_key
+  +twitter_button(0, 0, 5px, 12px, "k")
+
+/*/////////////// Unlocked ////////////////
+
+a.icon_unlocked
+  +twitter_button(0, 0, 5px, 12px, "l")
+
+/*/////////////// locked ////////////////
+
+a.icon_locked
+  +twitter_button(0, 0, 5px, 12px, "L")
+
+/*/////////////// Mail ////////////////
+
+a.icon_mail
+  +twitter_button(0, 0, 5px, 12px, "m")
+
+/*/////////////// Mail Alt ////////////////
+
+a.icon_mail-alt
+  +twitter_button(0, 0, 5px, 12px, "M")
+
+/*/////////////// Phone ////////////////
+
+a.icon_phone
+  +twitter_button(0, 0, 5px, 12px, "n")
+
+/*/////////////// Box ////////////////
+
+a.icon_box
+  +twitter_button(0, 0, 5px, 12px, "o")
+
+/*/////////////// Pencil ////////////////
+
+a.icon_pencil
+  +twitter_button(0, 0, 5px, 12px, "p")
+
+/*/////////////// Pencil Alt ////////////////
+
+a.icon_pencil-alt
+  +twitter_button(0, 0, 5px, 12px, "P")
+
+/*/////////////// Comment ////////////////
+
+a.icon_comment
+  +twitter_button(0, 0, 5px, 12px, "q")
+
+/*/////////////// Comment Alt ////////////////
+
+a.icon_comment-alt
+  +twitter_button(0, 0, 5px, 12px, "Q")
+
+/*/////////////// RSS ////////////////
+
+a.icon_rss
+  +twitter_button(0, 0, 5px, 12px, "r")
+
+/*/////////////// Star ////////////////
+
+a.icon_star
+  +twitter_button(0, 0, 5px, 12px, "s")
+
+/*/////////////// Trash ////////////////
+
+a.icon_trash
+  +twitter_button(0, 0, 5px, 12px, "t")
+
+/*/////////////// User ////////////////
+
+a.icon_user
+  +twitter_button(0, 0, 5px, 12px, "u")
+
+/*/////////////// Volume ////////////////
+
+a.icon_volume
+  +twitter_button(0, 0, 5px, 12px, "v")
+
+/*/////////////// Mute ////////////////
+
+a.icon_mute
+  +twitter_button(0, 0, 5px, 12px, "V")
+
+/*/////////////// Cog ////////////////
+
+a.icon_cog
+  +twitter_button(0, 0, 5px, 12px, "w")
+
+/*/////////////// Cog Alt ////////////////
+
+a.icon_cog-alt
+  +twitter_button(0, 0, 5px, 12px, "W")
+
+/*/////////////// X ////////////////
+
+a.icon_x
+  +twitter_button(0, 0, 5px, 12px, "x")
+
+/*/////////////// X Alt ////////////////
+
+a.icon_x-alt
+  +twitter_button(0, 0, 5px, 12px, "X")
+
+/*/////////////// Check ////////////////
+
+a.icon_check
+  +twitter_button(0, 0, 5px, 12px, "y")
+
+/*/////////////// Alt ////////////////
+
+a.icon_check-alt
+  +twitter_button(0, 0, 5px, 12px, "Y")
+
+/*/////////////// Beaker ////////////////
+
+a.icon_beaker
+  +twitter_button(0, 0, 5px, 12px, "z")
+
+/*/////////////// Beaker Alt ////////////////
+
+a.icon_beaker-alt
+  +twitter_button(0, 0, 5px, 12px, "Z")
+
+nav
+  +column(20)
+  +prepend(4)
+  +prepend-top
+  +append-bottom
+  ul
+    +horizontal-list-container
+  li
+    +horizontal-list-item(15px, left)
+    +column(5)
+    text-align: center
