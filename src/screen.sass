@@ -1,6 +1,6 @@
 @import compass/reset
-@import base
-@import twitter_buttons
+@import _base
+@import _twitter_buttons
 
 body
   background-color: $bg_color
@@ -69,6 +69,10 @@ section
   +append(2)
   +prepend(2)
 
+.icon-container
+  width: auto
+  +float(left)
+
 #buttons_container
   +prepend-top
   +column(20)
@@ -79,6 +83,7 @@ section
     +border-radius(5px)
     background-color: #f0f0f0
     +append-bottom
+    position: relative
     p
       text-align: center
       text-transform: capitalize
@@ -87,6 +92,8 @@ section
       margin-top: 0.75em
       margin-bottom: 0.75em
       font-weight: 700
+      width: 100%
+      +float(left)
   a
     text-transform: capitalize
 

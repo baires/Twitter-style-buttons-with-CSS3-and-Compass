@@ -1,6 +1,6 @@
 @import "compass/reset";
-@import "base";
-@import "twitter_buttons";
+@import "_base";
+@import "_twitter_buttons";
 
 
 body {
@@ -78,7 +78,10 @@ section{
 		@include append(2);
 		@include prepend(2);
 }
-
+.icon-container {
+		width:auto;
+		@include float(left);
+}
 #buttons_container{
 		           @include prepend-top;
 		           @include column(20);
@@ -91,6 +94,7 @@ section{
                    @include border-radius(5px);
                    background-color: #f0f0f0;
                    @include append-bottom;
+                   position:relative;
                     
                    p {
                    text-align: center;
@@ -100,6 +104,8 @@ section{
 				   margin-top: 0.75em;
 				   margin-bottom: 0.75em;
 				   font-weight: 700;
+				   width:100%;
+				   @include float(left);
 				   }
                     
 			}

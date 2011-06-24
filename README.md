@@ -25,7 +25,7 @@ Install the buttons module with:
     @import "fancy_3d_buttons";
     
 
-Move the folder **fonts** to the root of your Rail proyect.
+Move the folder **fonts** to the root of your Rail project.
 
 Configurable Variables
 ======================
@@ -45,7 +45,7 @@ Mixin
                     a.green{
                     @include twitter_button(#00AE3E, #fff, 5px,12px)
                     }
-                    /*/ Custom background color, custon text color, custom border-radius, custom font size, no icon /*/
+                    /*/ Custom background color, custom text color, custom border-radius, custom font size, no icon /*/
                     
                     
                     a.red{
@@ -77,6 +77,7 @@ Mixin
 
 Changelog
 =========
+24/06/2011 - Fixed some bugs, add support to Opera gradients, Fixed the Typo weird bug in Safari
 12/01/2011 - First release
 12/01/2011 - Include the SASS files 
 
@@ -86,8 +87,6 @@ Todo
 
 * Make a better :hover :visited state
 * Find a solution  for IE9 Border-radius and Background Gradient Bleeding
-* Fix the line height in the :before state (Safari)
-* Improve the typo for Safari
 
 Licence
 =======
