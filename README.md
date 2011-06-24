@@ -77,9 +77,9 @@ Mixin
 
 Changelog
 =========
-24/06/2011 - Fixed some bugs, add support to Opera gradients, Fixed the Typo weird bug in Safari
-12/01/2011 - First release
-12/01/2011 - Include the SASS files 
+* 24/06/2011 - Fixed some bugs, add support to Opera gradients, Fixed the Typo weird bug in Safari
+* 12/01/2011 - First release
+* 12/01/2011 - Include the SASS files 
 
 
 Todo
