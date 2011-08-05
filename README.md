@@ -14,7 +14,7 @@ Demo
 
 ![screenshot](http://eliseos.net/test/compass_css3_buttons/twitter_style_buttons.png)
 
-Don't forget to check the [live demo](http://eliseos.net/test/compass_css3_buttons/)
+Don't forget to check the [live demo](http://a00.com.ar/compass_css3_buttons/)
 
 
 Install
