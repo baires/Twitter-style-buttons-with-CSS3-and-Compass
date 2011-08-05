@@ -22,7 +22,7 @@ Install
 
 Install the buttons module with:
 
-    @import "fancy_3d_buttons";
+    @import "twitter_buttons";
     
 
 Move the folder **fonts** to the root of your Rail project.
