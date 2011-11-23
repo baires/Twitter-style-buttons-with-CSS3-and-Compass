@@ -1,1 +1,3 @@
 .sass-cache/
+.gitignore
+.DS_Store
