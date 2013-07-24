@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Twitter-style-buttons-with-css3-and-compass by Baires</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Twitter-style-buttons-with-css3-and-compass</h1>
+        <p>This cool recipe for SASS (Compass) lets you combine and create   practically an infinite number of combinations that generate twitter style buttons</p>
+
+        <p class="view"><a href="https://github.com/Baires/Twitter-style-buttons-with-CSS3-and-Compass">View the Project on GitHub <small>Baires/Twitter-style-buttons-with-CSS3-and-Compass</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Baires/Twitter-style-buttons-with-CSS3-and-Compass/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Baires/Twitter-style-buttons-with-CSS3-and-Compass/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Baires/Twitter-style-buttons-with-CSS3-and-Compass">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="twitter-style-buttons-with-css3-and-compass-v09" class="anchor" href="#twitter-style-buttons-with-css3-and-compass-v09"><span class="octicon octicon-link"></span></a>Twitter style buttons with CSS3 and Compass v0.9</h1>
+
+<p>This cool recipe for SASS (Compass) lets you combine and create 
+practically an infinite number of combinations that generate twitter style buttons.</p>
+
+<p>Additionally you can also include an icon next to your text, keeking your code neat and clean.
+This recipes use the Iconic typace by <a href="http://somerandomdude.com/projects/iconic/"><strong>Some Random Dude</strong></a>.
+No images are used at all in the making of this buttons.</p>
+
+<h1>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h1>
+
+<p><img src="http://eliseos.net/test/compass_css3_buttons/twitter_style_buttons.png" alt="screenshot"></p>
+
+<p>Don't forget to check the <a href="http://a00.com.ar/compass_css3_buttons/">live demo</a></p>
+
+<h1>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h1>
+
+<p>Install the buttons module with:</p>
+
+<pre><code>@import "twitter_buttons";
+</code></pre>
+
+<p>Move the folder <strong>fonts</strong> to the root of your Rail project.</p>
+
+<h1>
+<a name="configurable-variables" class="anchor" href="#configurable-variables"><span class="octicon octicon-link"></span></a>Configurable Variables</h1>
+
+<pre><code>twitter_button(color-background, text-color, border-radius, font-size, icon-type)
+</code></pre>
+
+<h1>
+<a name="mixin" class="anchor" href="#mixin"><span class="octicon octicon-link"></span></a>Mixin</h1>
+
+<pre><code>                a.default{
+                @include twitter_button();
+                }
+                /*/Default settings /*/
+
+
+                a.green{
+                @include twitter_button(#00AE3E, #fff, 5px,12px)
+                }
+                /*/ Custom background color, custom text color, custom border-radius, custom font size, no icon /*/
+
+
+                a.red{
+                @include twitter_button(#c63738,#fff, 0,0)
+                }
+                /*/ Custom background color, custom text color, default border-radius, default font size, no icon /*/
+
+
+                a.violet{
+                @include twitter_button(0,#000)
+                }
+                /*/ Default background color, custom text color,default border-radius, default font size, no icon  /*/
+
+
+                a.icon_home{
+                @include twitter_button(#00A0B0, #fff, 5px,12px,'!')
+                }
+                /*/ Custom background color, custon text color, custom border-radius, custom font size, home icon /*/
+
+
+                a.icon_arrow-right 
+                {@include twitter_button(0, 0, 5px,12px, "4") 
+                }
+                /*/ Default background color, default text color, custom border-radius, custom font size, right arrow icon  /*/
+</code></pre>
+
+<p><strong>For a full list of available icons please check the Demo</strong>.</p>
+
+<h1>
+<a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h1>
+
+<ul>
+<li>24/06/2011 - Fixed some bugs, add support to Opera gradients, Fixed the Typo weird bug in Safari</li>
+<li>12/01/2011 - First release</li>
+<li>12/01/2011 - Include the SASS files </li>
+</ul><h1>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>Todo</h1>
+
+<ul>
+<li>Make a better :hover :visited state</li>
+<li>Find a solution  for IE9 Border-radius and Background Gradient Bleeding</li>
+</ul><h1>
+<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h1>
+
+<pre><code>Copyright (c) 2011 Alexis Sgavel (http://github.com/Baires)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Baires">Baires</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
